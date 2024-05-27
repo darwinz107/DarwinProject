@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Darwin Zambrano">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Videos</title>
+</head>
+<style>
+    body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #92a4ff;
+    }
+
+    h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+    }
+
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 33vw;
+        overflow: hidden;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .centrado {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+
+
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        clear: both;
+    }
+
+    video {
+        width: 100%;
+
+    }
+
+    audio {
+        margin: 0 auto;
+
+    }
+</style>
+
+<body>
+    <header>
+
+        <nav>
+
+            <h1>7 Palabras</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="Videos.html">Videos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+
+            </ul>
+
+        </nav>
+
+
+
+
+    </header>
+
+    <video class="centrado" src="assets\video\Dragon Ball AF - Goku se Transforma en SSJ5 - Latino.mp4" loop autoplay
+        muted></video>
+
+    <audio class="centrado" src="assets\audio\Y2meta.app - 10th Man Down (128 kbps).mp3" volumen="0.4" controls></audio>
+
+    <section class="centrado">
+
+        <div class="gallery">
+            <div class="desc"><b>Goku 1</b></div>
+            <a href="https://img.wattpad.com/3799145320b0befd5b914a60a71726f932d52d83/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a505f5a63396b5977704a5655773d3d2d313230323831393135342e313664626538646664333930376533343737393333363032303833392e6a7067?s=fit&w=720&h=720"
+                target="_blank"> <img
+                    src="https://img.wattpad.com/3799145320b0befd5b914a60a71726f932d52d83/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a505f5a63396b5977704a5655773d3d2d313230323831393135342e313664626538646664333930376533343737393333363032303833392e6a7067?s=fit&w=720&h=720"
+                    style="width: 400px;" alt=""></a>
+
+        </div>
+        <div class="gallery">
+            <div style="overflow: hidden;" class="desc"><b>Goku 2</b></div>
+            <a href="https://i.pinimg.com/736x/9a/99/46/9a9946e8de5bd8a1f6bbcf32db236028.jpg" target="_blank"> <img
+                    src="https://i.pinimg.com/736x/9a/99/46/9a9946e8de5bd8a1f6bbcf32db236028.jpg" style="width: 450px"
+                    alt=""></a>
+
+        </div>
+        <div class="gallery">
+            <div  class="desc"><b>Goku 3</b></div><a
+                href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/29c86a35-e072-4b97-b804-22d8bedd9525/dg2ikeg-7cf53a5b-e170-4ca3-bdc5-274bd2680a87.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI5Yzg2YTM1LWUwNzItNGI5Ny1iODA0LTIyZDhiZWRkOTUyNVwvZGcyaWtlZy03Y2Y1M2E1Yi1lMTcwLTRjYTMtYmRjNS0yNzRiZDI2ODBhODcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-xi8n4l3Pwakz-v9rpSJLNB4amVK5q99VWUTR3udCek"
+                target="_blank"><img
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/29c86a35-e072-4b97-b804-22d8bedd9525/dg2ikeg-7cf53a5b-e170-4ca3-bdc5-274bd2680a87.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI5Yzg2YTM1LWUwNzItNGI5Ny1iODA0LTIyZDhiZWRkOTUyNVwvZGcyaWtlZy03Y2Y1M2E1Yi1lMTcwLTRjYTMtYmRjNS0yNzRiZDI2ODBhODcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-xi8n4l3Pwakz-v9rpSJLNB4amVK5q99VWUTR3udCek"
+                    style="width: 400px" alt=""></a>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <footer class="footer">Derechos reservados &copy; 2024</footer>
+</body>
+
+</html>

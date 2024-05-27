@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Darwin Zambrano">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+
+    <style>
+        body {
+
+            padding: 0;
+            margin: 0;
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+        }
+
+        header {
+
+            text-align: center;
+        }
+
+        ul {
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(37, 36, 36);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(37, 36, 36);
+
+        }
+
+        .active {
+
+            background-color: #92a4ff;
+            ;
+        }
+
+        h1 {
+            background-color: black;
+            color: #92a4ff;
+            padding: 10px;
+            margin: 0;
+
+        }
+
+        .container-nosotros {
+
+            padding-top: 10px;
+            width: 490px;
+            margin: 0 auto;
+            text-align: center;
+
+            background: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 0, 0));
+            border-radius: 10%;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+
+        .bardock-img {
+            width: 250px;
+            padding: 0 100px;
+            border-radius: 100%;
+        }
+
+        form {
+
+            padding: 10px;
+        }
+
+        .form-group {
+            margin-top: 20 px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            flex: 1;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+
+            background-color: #92a4ff;
+            color: aliceblue;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            height: 40px;
+            width: 150px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3453f3;
+        }
+
+
+        .footer {
+
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>7 Palabras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a class="active" href="nosotros.html">Nosotros</a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+
+    <h2>Nosotros somos esencia</h2>
+    <hr>
+    <div class="container-nosotros">
+        <div class="contenido-superior">
+            <img class="bardock-img"
+                src="https://mir-s3-cdn-cf.behance.net/projects/404/7a3dc392161805.5e4426220436a.jpg" alt="Bardock-DZ">
+
+
+            <h3>Información Personal</h3>
+            <p>
+
+
+                <b>Nombre: </b> Darwin Zambrano <br>
+                <b>Correo Electrónico: </b> dzambrano@example.com <br>
+                <b>Teléfono Celular: </b> +1 (555) 123-4567 <br>
+
+                <b>Información Adiciona</b> <br>
+
+                <b>Fecha de Nacimiento: </b> 15 de marzo de 1985 <br>
+                <b>Dirección: </b> 123 Calle Principal, Ciudad Ejemplo, País Ejemplo <br>
+                <b> Estado Civil: </b> Soltero <br>
+                <b>Ocupación: </b> Ingeniero de Software <br>
+                <b>Nivel de Educación: </b> Licenciatura en Ingeniería Informática <br>
+                <b> Idiomas: </b> Español (nativo), Inglés (avanzado) <br>
+                <b> Hobbies: </b> Practicar senderismo, tocar la guitarra
+
+
+            </p>
+        </div>
+
+    </div>
+
+    <div class="contenedor-formulario">
+
+        <form>
+
+            <div class="form-group"> <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="form-group"> <label for="apeliido">Apellido:</label>
+                <input type="text" id="apeliido" name="apeliido" placeholder="Escribe tu apellido">
+            </div>
+
+            <div class="form-group"> <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail" placeholder="Escriba su e-mail">
+            </div>
+
+            <div class="form-group"><label for="pais">Pais:</label>
+                <select name="pais" id="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Costa rica">Costa rica</option>
+                </select>
+        </form>
+    </div>
+    <div class="form-group"><label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" placeholder="speed"></textarea>
+    </div>
+
+    <div class="form-group-radio"><label for="motivo">Motivo de contacto: </label>
+        <input type="radio" name="motivo" id="motivo"><i>Soy un saiyayin</i>
+        <input type="radio" name="motivo" id="motivo"><i>Quiero un regalo</i>
+        <input type="radio" name="motivo" id="motivo"><i>Publicidad</i>
+        <input type="radio" name="motivo" id="motivo"><i>Reclamos</i>
+    </div>
+    <div class="form-btn">
+        <input type="submit" class="submit-btn" value="Enviar">
+    </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">Derechos reservados &copy; 2024</footer>
+
+
+</body>
+
+</html>
